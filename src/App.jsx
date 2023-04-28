@@ -7,7 +7,7 @@ const imageAnimate={
     onscreen:{
     x:0,
     opacity:1,
-    rotate:[360,360,0],
+    rotate:[360,10,0],
     transition: {type:"spring",
     bounce:0.4,
     duration:1}
