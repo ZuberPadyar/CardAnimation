@@ -3,14 +3,16 @@ import { blogList } from "./Components/Bloglist";
 import { motion } from "framer-motion";
 
 const imageAnimate={
-    offscreen:{x:-100, opacity:0},
+    offscreen:{x:"-100vw", opacity:0},
     onscreen:{
     x:0,
     opacity:1,
-    rotate:[360,10,0],
+    rotate:[0,10,0],
+    
     transition: {type:"spring",
-    bounce:0.4,
-    duration:1}
+    bounce:0.6,
+    
+    duration:0.8}
   }
 
 }
@@ -21,7 +23,7 @@ const textAnimate={
     opacity:1,
     transition: {type:"spring",
     bounce:0.4,
-    duration:1}
+    duration:0.8}
  }
 
 }
@@ -31,7 +33,7 @@ function Card({ image, h2, p,id }) {
     <motion.div className="card " id={id}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{once:false, amount:1}}
+        viewport={{once:false, amount:0.25}}
         transition={{staggerChildren:0.6}}
     >
       <motion.div className="image-container"       
