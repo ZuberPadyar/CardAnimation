@@ -9,10 +9,8 @@ const imageAnimate={
     opacity:1,
     rotate:[0,10,0],
     
-    transition: {type:"spring",
-    bounce:0.6,
-    
-    duration:0.8}
+    transition: {    
+    duration:0.5}
   }
 
 }
@@ -21,9 +19,8 @@ const textAnimate={
     offscreen:{y:100, opacity:0},
     onscreen:{y:0,
     opacity:1,
-    transition: {type:"spring",
-    bounce:0.4,
-    duration:0.8}
+    transition: {
+    duration:0.6}
  }
 
 }
@@ -33,8 +30,8 @@ function Card({ image, h2, p,id }) {
     <motion.div className="card " id={id}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{once:false, amount:0.25}}
-        transition={{staggerChildren:0.6}}
+        viewport={{once:false, amount:0.85}}
+        transition={{staggerChildren:0.55}}
     >
       <motion.div className="image-container"       
         variants={imageAnimate}
