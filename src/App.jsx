@@ -10,7 +10,7 @@ const imageAnimate={
     rotate:[0,10,0],
     
     transition: {    
-    duration:0.5}
+    duration:0.7}
   }
 
 }
@@ -20,7 +20,7 @@ const textAnimate={
     onscreen:{y:0,
     opacity:1,
     transition: {
-    duration:0.6}
+    duration:0.8}
  }
 
 }
@@ -30,7 +30,7 @@ function Card({ image, h2, p,id }) {
     <motion.div className="card " id={id}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{once:false, amount:0.85}}
+        viewport={{once:false, amount:0.95}}
         transition={{staggerChildren:0.55}}
     >
       <motion.div className="image-container"       
