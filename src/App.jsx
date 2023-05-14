@@ -10,7 +10,7 @@ const imageAnimate={
     rotate:[0,20,0],
     
     transition: {    
-    duration:0.7}
+    duration:0.4}
   }
 
 }
@@ -20,7 +20,7 @@ const textAnimate={
     onscreen:{y:0,
     opacity:1,
     transition: {
-    duration:0.6}
+    duration:0.4}
  }
 
 }
